@@ -7,6 +7,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.components.layout.MyColumn
+import com.example.myapplication.components.layout.MyLayout
+import com.example.myapplication.components.layout.MyRow
+import com.example.myapplication.state.MyState
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +17,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            MyColumn()
+            MyState()
         }
     }
 }

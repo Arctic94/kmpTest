@@ -6,9 +6,12 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.myapplication.components.layout.LoginPage
+
 import com.example.myapplication.components.layout.MyColumn
 import com.example.myapplication.components.layout.MyLayout
 import com.example.myapplication.components.layout.MyRow
+import com.example.myapplication.components.layout.ReactiveLoginPage
 import com.example.myapplication.state.MyState
 
 class MainActivity : ComponentActivity() {
@@ -17,7 +20,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            MyState()
+            ReactiveLoginPage()
         }
     }
 }
